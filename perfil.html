@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário | Sistema de Agendamento Hospitalar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header full-width">
+        <div class="logo-text">Med<span class="logo-highlight">Care</span></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="agendamento.html" class="nav-link">Agendar Consulta</a></li>
+                <li><a href="meus_agendamentos.html" class="nav-link">Meus Agendamentos</a></li>
+                <li><a href="historico.html" class="nav-link">Histórico</a></li>
+                <li><a href="perfil.html" class="nav-link">Perfil</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <div class="user-name">João Silva</div>
+            <div class="user-avatar">
+                <img src="https://via.placeholder.com/30" alt="Avatar">
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-layout full-width">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Meu Perfil</h3>
+            </div>
+            <div class="sidebar-menu">
+                <a href="perfil.html" class="sidebar-item active">Dados Pessoais</a>
+                <a href="#" class="sidebar-item">Endereço</a>
+                <a href="#" class="sidebar-item">Planos de Saúde</a>
+                <a href="#" class="sidebar-item">Segurança</a>
+                <a href="index.html" class="sidebar-item">Sair</a>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="container">
+                <div class="appointment-container">
+                    <h2>Dados Pessoais</h2>
+                    <p class="subtitle">Atualize suas informações pessoais</p>
+
+                    <form id="perfilForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nomeCompleto">Nome Completo</label>
+                                <input type="text" id="nomeCompleto" value="João Silva" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" id="cpf" value="123.456.789-00" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dataNascimento">Data de Nascimento</label>
+                                <input type="date" id="dataNascimento" value="1990-01-15" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="genero">Gênero</label>
+                                <select id="genero" required>
+                                    <option value="masculino" selected>Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="nao-informar">Prefiro não informar</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" value="(11) 98765-4321" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" value="joao.silva@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="foto">Foto de Perfil</label>
+                            <input type="file" id="foto" accept="image/*">
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-primary">Salvar Alterações</button>
+                            <button type="button" id="cancelarBtn" class="btn-secondary">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accessibility-button">
+        <button id="accessibilityToggle">
+            <img src="acessibilidade.png" alt="Acessibilidade" class="accessibility-icon">
+        </button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

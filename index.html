@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="accessibility-button">
+        <button id="accessibilityToggle">
+            <img src="acessibilidade.png" alt="Acessibilidade" class="accessibility-icon">
+        </button>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <img src="image.png" alt="MedCare Logo">
+            </div>
+            
+            <h2>Bem-Vindo De Volta</h2>
+            <p class="subtitle">Login</p>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <div class="input-with-icon">
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <div class="input-with-icon">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    
+                    <div class="password-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="lembrarSenha"> 
+                            <span>Lembrar senha</span>
+                        </label>
+                        <a href="esqueceu_senha.html" class="forgot-password">Esqueceu Senha?</a>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+            
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

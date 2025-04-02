@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare - Agendamento Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="agendamento-page">
+    <div class="container full-width">
+        <header class="main-header">
+            <div class="logo-container">
+                <span class="logo-text">Med<span class="logo-highlight">Care</span></span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="nav-link">Consultas</a></li>
+                    <li><a href="#" class="nav-link">Agendamentos</a></li>
+                    <li><a href="#" class="nav-link">Laudos</a></li>
+                    <li><a href="#" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <span class="user-name">Olá, João</span>
+                <div class="user-avatar">
+                    <img src="https://placehold.co/30x30/eee/666" alt="User Avatar">
+                </div>
+            </div>
+        </header>
+        <main class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Dashboard</h3>
+                </div>
+                <div class="sidebar-menu">
+                    <a href="meus_agendamentos.html" class="sidebar-item">Meus Agendamentos</a>
+                    <a href="agendamento.html" class="sidebar-item active">Novo Agendamento</a>
+                    <a href="historico.html" class="sidebar-item">Histórico</a>
+                    <a href="perfil.html" class="sidebar-item">Perfil</a>
+                    <a href="index.html" class="sidebar-item">Sair</a>
+                </div>
+            </aside>
+            <section class="content-area">
+                <div class="appointment-container">
+                    <h2>Novo Agendamento</h2>
+                    <div class="appointment-form-container">
+                        <div class="calendar-section">
+                            <div class="month-selector">
+                                <button class="month-nav prev">&lt;</button>
+                                <span class="current-month">Março 2025</span>
+                                <button class="month-nav next">&gt;</button>
+                            </div>
+                            <div class="calendar-grid">
+                                <div class="weekday">Dom</div>
+                                <div class="weekday">Seg</div>
+                                <div class="weekday">Ter</div>
+                                <div class="weekday">Qua</div>
+                                <div class="weekday">Qui</div>
+                                <div class="weekday">Sex</div>
+                                <div class="weekday">Sáb</div>
+                                
+                                <div class="day disabled">23</div>
+                                <div class="day disabled">24</div>
+                                <div class="day disabled">25</div>
+                                <div class="day disabled">26</div>
+                                <div class="day disabled">27</div>
+                                <div class="day disabled">28</div>
+                                <div class="day">1</div>
+                                <div class="day">2</div>
+                                <div class="day">3</div>
+                                <div class="day">4</div>
+                                <div class="day">5</div>
+                                <div class="day">6</div>
+                                <div class="day">7</div>
+                                <div class="day">8</div>
+                                <div class="day">9</div>
+                                <div class="day">10</div>
+                                <div class="day">11</div>
+                                <div class="day">12</div>
+                                <div class="day">13</div>
+                                <div class="day">14</div>
+                                <div class="day">15</div>
+                                <div class="day">16</div>
+                                <div class="day">17</div>
+                                <div class="day">18</div>
+                                <div class="day">19</div>
+                                <div class="day">20</div>
+                                <div class="day">21</div>
+                                <div class="day">22</div>
+                                <div class="day selected">23</div>
+                                <div class="day">24</div>
+                                <div class="day">25</div>
+                                <div class="day">26</div>
+                                <div class="day">27</div>
+                                <div class="day">28</div>
+                                <div class="day">29</div>
+                                <div class="day">30</div>
+                                <div class="day">31</div>
+                                <div class="day disabled">1</div>
+                                <div class="day disabled">2</div>
+                                <div class="day disabled">3</div>
+                                <div class="day disabled">4</div>
+                            </div>
+                            <div class="time-selector">
+                                <label for="horario">Horário*</label>
+                                <select id="horario" name="horario" required>
+                                    <option value="" disabled selected>Selecione um horário para sua consulta</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="appointment-details">
+                            <div class="form-group">
+                                <label for="especialidade">Especialidade*</label>
+                                <select id="especialidade" name="especialidade" required>
+                                    <option value="" disabled selected>Selecione uma especialidade</option>
+                                    <option value="clinico-geral">Clínico Geral</option>
+                                    <option value="cardiologia">Cardiologia</option>
+                                    <option value="dermatologia">Dermatologia</option>
+                                    <option value="ortopedia">Ortopedia</option>
+                                    <option value="pediatria">Pediatria</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="medico">Médico*</label>
+                                <select id="medico" name="medico" required>
+                                    <option value="" disabled selected>Selecione um médico</option>
+                                    <option value="dr-silva">Dr. Silva</option>
+                                    <option value="dra-santos">Dra. Santos</option>
+                                    <option value="dr-oliveira">Dr. Oliveira</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="plano">Plano de Saúde*</label>
+                                <select id="plano" name="plano" required>
+                                    <option value="" disabled selected>Selecione seu plano de saúde</option>
+                                    <option value="particular">Particular</option>
+                                    <option value="unimed">Unimed</option>
+                                    <option value="amil">Amil</option>
+                                    <option value="sulamerica">SulAmérica</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="detalhes">Detalhes Adicionais</label>
+                                <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva seus sintomas ou o motivo da consulta"></textarea>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn-secondary">Cancelar</button>
+                                <button type="submit" class="btn-primary">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="social-buttons">
+            <button id="accessibilityToggle">
+                <img src="acessibilidade.png" alt="Acessibilidade" class="accessibility-icon">
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h2>Recuperação de Senha</h2>
+                <p class="subtitle">Informe seu e-mail cadastrado para receber instruções de recuperação</p>
+            </div>
+            
+            <form id="recuperacaoForm" class="login-form">
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail cadastrado" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn-primary btn-block">Enviar Instruções</button>
+                </div>
+                
+                <div class="form-group">
+                    <div id="mensagem" class="mensagem-box" style="display: none;"></div>
+                </div>
+            </form>
+            
+            <div class="login-footer">
+                <a href="index.html" class="link-return">Voltar para o Login</a>
+            </div>
+        </div>
+        
+        <div class="esqueceu-senha-info">
+            <div class="info-box">
+                <h3>Como funciona a recuperação de senha</h3>
+                <ol>
+                    <li>Informe o e-mail associado à sua conta</li>
+                    <li>Você receberá um link para criar uma nova senha</li>
+                    <li>Acesse o link e defina sua nova senha</li>
+                    <li>Faça login com sua nova senha</li>
+                </ol>
+                <p>O link de recuperação expira em 24 horas.</p>
+                <p>Se você não receber o e-mail em até 15 minutos, verifique sua pasta de spam.</p>
+            </div>
+            
+            <div class="help-box">
+                <h4>Precisa de ajuda?</h4>
+                <p>Entre em contato com nosso suporte:</p>
+                <p><strong>E-mail:</strong> suporte@medcare.com.br</p>
+                <p><strong>Telefone:</strong> (61) 93456-7890</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
