@@ -61,15 +61,10 @@ a:hover {
     text-align: left;
 }
 
-.logo {
+.logo, .user-icon {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-}
-
-.user-icon {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 .logo img {
@@ -79,11 +74,9 @@ a:hover {
 }
 
 .user-icon img {
-    max-height: 80px; /* Diminua ou aumente conforme necessário */
-    height: auto;
-    width: auto;
-    display: block;
-    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 h2 {
@@ -709,13 +702,19 @@ body {
 /* Botão de acessibilidade */
 .accessibility-button {
     position: fixed;
-    top: 600px;
+    bottom: 20px;
     right: 20px;
     z-index: 100;
 }
 
 .accessibility-button button {
     background-color: #fff;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -723,11 +722,16 @@ body {
     transition: all 0.3s ease;
 }
 
-
+.accessibility-button button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
 
 .accessibility-icon {
     width: 60px;
     height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Container de login */
