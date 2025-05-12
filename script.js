@@ -205,19 +205,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Add new options based on specialty
                 if (especialidade === 'clinico-geral') {
-                    addOption(medicoSelect, 'dr-silva', 'Dr. Silva');
-                    addOption(medicoSelect, 'dra-ferreira', 'Dra. Ferreira');
+                    addOption(medicoSelect, 'dr-paulo', 'Dr. Paulo');
+                    addOption(medicoSelect, 'dra-marcia', 'Dra. Márcia');
                 } else if (especialidade === 'cardiologia') {
-                    addOption(medicoSelect, 'dr-cardoso', 'Dr. Cardoso');
-                    addOption(medicoSelect, 'dra-coração', 'Dra. Coração');
+                    addOption(medicoSelect, 'dr-cardoso', 'Dr. Cláudio');
+                    addOption(medicoSelect, 'dra-joana', 'Dra. Joana');
                 } else if (especialidade === 'dermatologia') {
-                    addOption(medicoSelect, 'dra-pele', 'Dra. Pele');
+                    addOption(medicoSelect, 'dra-patricia', 'Dra. Patrícia');
                 } else if (especialidade === 'ortopedia') {
-                    addOption(medicoSelect, 'dr-ossos', 'Dr. Ossos');
-                    addOption(medicoSelect, 'dr-articulação', 'Dr. Articulação');
+                    addOption(medicoSelect, 'dr-kleber', 'Dr. Kleber');
+                    addOption(medicoSelect, 'dr-hermes', 'Dr. Hermes');
                 } else if (especialidade === 'pediatria') {
-                    addOption(medicoSelect, 'dra-criança', 'Dra. Criança');
-                    addOption(medicoSelect, 'dr-infantil', 'Dr. Infantil');
+                    addOption(medicoSelect, 'dra-cristina', 'Dra. Cristina');
+                    addOption(medicoSelect, 'dr-hugo', 'Dr. hugo');
                 }
             });
             
